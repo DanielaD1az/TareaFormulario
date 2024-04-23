@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoyo ambiental en Chiloé</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="Titulo">
+        <h1>Formulario de Postulación - Apoyo ambiental para Chiloé</h1>
+    </div>
+    <div class="Texto-relleno">
+        <h2>¡Ayuda a conservar la belleza de Chiloé!</h2>
+        <p>Chiloé, un archipiélago de ensueño con una rica biodiversidad, está en peligro. La deforestación, la contaminación y el cambio climático amenazan su ecosistema único.</p><br>
+        <h2>¿Te gustaría ser parte de la solución?</h2>
+        <p>Únete a nuestro programa de voluntariado y ayuda a proteger este tesoro natural.</p><br>
+        <h2>¿Qué puedes hacer?</h2>
+        <ul>
+            <li><p>Plantar árboles: Reforesta las zonas degradadas y devuelve la vida al bosque.</p></li>
+            <li><p>Limpiar playas: Elimina la basura y los residuos que contaminan el mar.</p></li>
+            <li><p>Educar a la comunidad: Sensibiliza a las personas sobre la importancia de la conservación ambiental.</p></li>
+            <li><p>Investigar la flora y fauna: Contribuye a la comprensión del ecosistema de Chiloé.</p></li>
+        </ul>
+        <h2>¿Qué te ofrecemos?</h2>
+        <ul>
+            <li><p>La oportunidad de vivir una experiencia única y enriquecedora.</p></li>
+            <li><p>Conocer gente nueva y compartir tu pasión por el medio ambiente.</p></li>
+            <li><p>Aprender sobre la biodiversidad de Chiloé y los desafíos que enfrenta.</p></li>
+            <li><p>La satisfacción de contribuir a la protección de un lugar mágico.</p></li>
+        </ul>
+        <h2>¿Cómo puedes unirte?</h2>
+        <p>Completa el formulario a continuación junto a una carta con tu motivación por participar</p><br>
+        <h2>¡No lo dudes! Únete a nosotros y juntos conservaremos la belleza de Chiloé para las futuras generaciones.</h2> <br>
+    </div>
+    <form id="formulario" class="Formulario">
+        <label for="rut">RUT:</label>
+        <input type="text" id="rut" name="rut" required><br>
+        <label for="apellidoPaterno">Apellido Paterno:</label>
+        <input type="text" id="apellidoPaterno" name="apellidoPaterno" required><br>
+        <label for="apellidoMaterno">Apellido Materno:</label>
+        <input type="text" id="apellidoMaterno" name="apellidoMaterno" required><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br>
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+        <option value="">Seleccione...</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="no_binario">No Binario</option>
+        </select><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular" required><br>
+        <label for="profesion">Profesión:</label>
+        <input type="text" id="profesion" name="profesion" required><br>
+        <label for="motivacion">Motivación para Postular:</label>
+        <textarea id="motivacion" name="motivacion" rows="5" cols="50" required></textarea><br>
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="button" id="crearCarta" onclick="generarCarta()">Crear Carta</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
